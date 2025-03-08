@@ -10,7 +10,7 @@
 
 /* 🔹 PORTAFOLIO-BANNER IMAGE */
 .bg-image {
-  background: url("./assets/portfolio-banner.jpg") center/cover no-repeat;
+  background: url("./assets/hero_images/portfolio-banner.jpg") center/cover no-repeat;
   height: 35vh;
   width: 100%;
 }
