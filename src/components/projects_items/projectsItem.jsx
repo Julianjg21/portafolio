@@ -28,12 +28,20 @@ const ProjectItem = ({
         <div>
           <div className="row mt-md-5">
             <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
-              <img src={projectImg} alt="project img" className="w-75 h-75" />
+              <img
+                src={projectImg}
+                alt="project img"
+                className="w-100 h-50  border"
+              />
             </div>
             <div className="col-md-8 col-12">
               <h3 className="mb-4">{projectName}</h3>
-              <Card.Text className="text-start">{projectDescription}</Card.Text>
-              <div className="d-flex flex-row mt-4">
+              <Card.Text className="text-start">
+                {projectDescription.map((exp, index) => (
+                  <p key={index}>{exp.text}</p>
+                ))}
+              </Card.Text>
+              <div className="d-flex flex-row  flex-wrap mt-4">
                 {technologies.map((exp, index) => (
                   // Each technology is displayed as a styled paragraph.
                   <p key={index} className={`${exp.style} me-2 rounded p-1`}>
