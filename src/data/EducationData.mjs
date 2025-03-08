@@ -7,7 +7,7 @@ const educationCompleted = [
   {
     period: "2022 - 2024",
     institution: "CENTRO INDUSTRIAL  Y DESARROLLO EMPRESARIAL SENA SOACHA",
-    degree: "Tecnologo en analisis y desarrollo  de software",
+    degree: "Tecnologo en análisis y desarrollo  de software",
   },
   {
     period: "2023 - 2024",

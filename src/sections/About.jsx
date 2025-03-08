@@ -17,7 +17,7 @@ function About() {
               </Card.Title>
               <div className="text-start">
                 <Card.Text>
-                  ¡Hola! Soy Julian David Jimenez Gonzalez,
+                  ¡Hola! Soy Julian David Jiménez González,
                   <br /> desarrollador de software enfocado en el backend. Desde
                   que tengo memoria, la tecnología siempre me ha llamado la
                   atención. Me encantaba desmontar cosas solo para ver cómo
