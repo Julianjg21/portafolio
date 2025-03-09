@@ -96,44 +96,15 @@ const PersonalProjectItem = ({
   );
 };
 
-// TechnologyItem component: Displays up to four technology logos or icons.
+// TechnologyItem component: Displays up to four technology  icons.
 // Props:
-// - imgSrc1, imgSrc2, imgSrc3, imgSrc4: The image sources for the logos/icons.
-// - alt1, alt2, alt3, alt4: The alt text for the images.
-// - styleImg1, styleImg2, styleImg3, styleImg4: Optional inline styles for the images.
-const TechnologyItem = ({
-  imgSrc1,
-  alt1,
-  styleImg1 = {},
-  imgSrc2,
-  alt2,
-  styleImg2 = {},
-  imgSrc3,
-  alt3,
-  styleImg3 = {},
-  imgSrc4,
-  alt4,
-  styleImg4 = {},
-}) => {
+const TechnologyItem = ({ name, src, width, height }) => {
   return (
-    <div className="row mb-2">
-      {/* Display the first technology logo/icon if imgSrc1 is provided. */}
-      <div className="col-3 d-flex justify-content-center">
-        {imgSrc1 && <img src={imgSrc1} alt={alt1} style={styleImg1} />}
-      </div>
-      {/* Display the second technology logo/icon if imgSrc2 is provided. */}
-      <div className="col-3 d-flex justify-content-center">
-        {imgSrc2 && <img src={imgSrc2} alt={alt2} style={styleImg2} />}
-      </div>
-      {/* Display the third technology logo/icon if imgSrc3 is provided. */}
-      <div className="col-3 d-flex justify-content-center">
-        {imgSrc3 && <img src={imgSrc3} alt={alt3} style={styleImg3} />}
-      </div>
-      {/* Display the fourth technology logo/icon if imgSrc4 is provided. */}
-      <div className="col-3 d-flex justify-content-center">
-        {imgSrc4 && <img src={imgSrc4} alt={alt4} style={styleImg4} />}
-      </div>
-    </div>
+    <td className="">
+      <img src={src} alt={name} width={width} height={height} />
+      <br />
+      {name}
+    </td>
   );
 };
 
