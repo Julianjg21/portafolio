@@ -8,6 +8,12 @@ const technologyIcons = [
     height: 50,
   },
   {
+    name: "NodeJs",
+    src: "https://skillicons.dev/icons?i=nodejs",
+    width: 65,
+    height: 50,
+  },
+  {
     name: "React",
     src: "https://techstack-generator.vercel.app/react-icon.svg",
     width: 48,
