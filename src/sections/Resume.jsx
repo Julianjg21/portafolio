@@ -17,6 +17,7 @@ import {
 } from "../data/ExperienceData.mjs"; //import the data of the professional experience
 import { technologyIcons, toolsIcons } from "../data/TechnologiesData.mjs"; //import the data of the technologies used
 import Card from "react-bootstrap/Card";
+import Table from "react-bootstrap/Table";
 
 function About() {
   return (
@@ -109,18 +110,46 @@ function About() {
                 Tecnologias usadas:
               </Card.Title>
 
-              <div className="text-start">
-                {technologyIcons.map((exp, index) => (
-                  <TechnologyItem key={index} {...exp} />
-                ))}
+              <div class="table-responsive">
+                <table className="table table-light">
+                  <tbody className=" ">
+                    {technologyIcons
+                      .reduce((acc, icon, index) => {
+                        if (index % 4 === 0) acc.push([]);
+                        acc[acc.length - 1].push(icon);
+                        return acc;
+                      }, [])
+                      .map((row, rowIndex) => (
+                        <tr key={rowIndex}>
+                          {row.map((icon, index) => (
+                            <TechnologyItem key={index} {...icon} />
+                          ))}
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
               </div>
               <Card.Subtitle className="text-start mt-5 mb-5 w-100">
                 Herramientas usadas:
               </Card.Subtitle>
-              <div className="text-start">
-                {toolsIcons.map((exp, index) => (
-                  <TechnologyItem key={index} {...exp} />
-                ))}
+              <div className="table-responsive">
+                <Table className="table table-light">
+                  <tbody>
+                    {toolsIcons
+                      .reduce((acc, icon, index) => {
+                        if (index % 4 === 0) acc.push([]);
+                        acc[acc.length - 1].push(icon);
+                        return acc;
+                      }, [])
+                      .map((row, rowIndex) => (
+                        <tr key={rowIndex}>
+                          {row.map((icon, index) => (
+                            <TechnologyItem key={index} {...icon} />
+                          ))}
+                        </tr>
+                      ))}
+                  </tbody>
+                </Table>
               </div>
             </Card.Body>
           </Card>
