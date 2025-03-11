@@ -24,6 +24,7 @@ export const projectsItem = [
       },
     ],
     technologies: [
+      { technology: "JavaScript", style: "text-warning border border-warning" },
       { technology: "Node.js", style: "text-success border border-success" },
       {
         technology: "Express.js",
@@ -56,6 +57,7 @@ export const projectsItem = [
       }
     ],
     technologies: [
+      { technology: "JavaScript", style: "text-warning border border-warning" },
       { technology: "Node.js", style: "text-success border border-success" },
       {
         technology: "Express.js",
@@ -86,6 +88,7 @@ export const projectsItem = [
 
     ],
     technologies: [
+      { technology: "JavaScript", style: "text-warning border border-warning" },
       { technology: "Node.js", style: "text-success border border-success" },
       {
         technology: "telegraf.js",
