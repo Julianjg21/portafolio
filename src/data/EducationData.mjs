@@ -14,6 +14,11 @@ const educationCompleted = [
     institution: "TÜV NORD",
     degree: "Curso auditor Interno ISO/IEC27001:2022",
   },
+  {
+    period: "2025",
+    institution: "Cisco Networking Academy",
+    degree: " Junior Cybersecurity Analyst Career Path",
+  },
 ];
 const educationInProgress = [
   {

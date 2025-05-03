@@ -11,7 +11,7 @@ function MainNavbar() {
       fixed="top"
     >
       <Container>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggle" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className="nav-link">
