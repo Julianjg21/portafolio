@@ -2,10 +2,15 @@
   text-align: center;
 }
 
+/* 🔹 FOOTER AND NAVBAR BACKGROUND COLOR */
+.footer-navbar-color{
+  background-color: #404040;
+}
+
 /* 🔹 NAVIGATION STYLES */
 .nav-link:hover,
 .nav-link.active {
-  color: #0d6efd !important; /* Ensure Bootstrap default styles are overridden */
+  color: #232529 !important; /* Ensure Bootstrap default styles are overridden */
 }
 
 /* 🔹 PORTAFOLIO-BANNER IMAGE */
@@ -64,4 +69,42 @@
 }
 .custom-toggle .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* 🔹 CAROUSEL STYLES */
+
+/* Wrapper for the entire carousel */
+.carousel-wrapper {
+  width: 90%;
+  max-width: 43.75rem;
+  margin: auto;
+}
+
+/* Main carousel container with aspect ratio and styling */
+.responsive-carousel {
+  aspect-ratio: 16 / 9;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+@media (max-width: 36rem) {
+
+  /* Make carousel wrapper full width on small screens */
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  /* Adjust carousel size for small screens */
+  .responsive-carousel {
+    width: 21.25rem;
+  }
+
+  /* Truncate long text with ellipsis */
+  .truncate {
+    width: 12.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
