@@ -4,32 +4,31 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 function MainNavbar() {
   return (
     <Navbar
-      bg="light"
-      variant="light"
-      className="border border-primary fw-bold sticky-top"
+      variant="secondary"
+      className=" footer-navbar-color fw-bold sticky-top shadow"
       expand="lg"
       fixed="top"
     >
       <Container>
-        <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggle" />
+        <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggle " />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="nav-link">
-              Inicio<span className="text-primary px-2  nav-lines">/</span>
+            <Nav.Link href="#home" className="nav-link text-light">
+              Inicio
             </Nav.Link>
 
-            <Nav.Link href="#about" className="nav-link">
-              Sobre mi <span className="text-primary px-2 nav-lines">/</span>
+            <Nav.Link href="#about" className="nav-link text-light">
+              Sobre mi
             </Nav.Link>
-            <Nav.Link href="#resume">
+            <Nav.Link href="#resume" className="text-light">
               Formación y Experiencia
-              <span className="text-primary px-2 nav-lines">/</span>
+
             </Nav.Link>
-            <Nav.Link href="#projects">Proyectos</Nav.Link>
+            <Nav.Link href="#projects" className="text-light">Proyectos</Nav.Link>
           </Nav>
           <Navbar.Brand className=" mx-auto fs-6 fw-medium" href="#home">
             Julian Jiménez <br />
-            <span className="fs-6 text-secondary fw-medium ">
+            <span className="fs-6 text-dark fw-medium ">
               Desarrollador Backend
             </span>
           </Navbar.Brand>
