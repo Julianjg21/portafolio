@@ -1,7 +1,7 @@
 // Import icons from react-icons for website and GitHub links.
 import { FaLink } from "react-icons/fa6";
 import { RxGithubLogo } from "react-icons/rx";
-
+import Carousel from "react-bootstrap/Carousel";
 // Import the Card component from react-bootstrap for a styled card layout.
 import Card from "react-bootstrap/Card";
 
@@ -93,3 +93,32 @@ const ProjectItem = ({
 };
 
 export default ProjectItem;
+
+export const MoreProyectsItem = (project, index) => {
+  //directly return the <Carousel.item>
+  return (
+    <Carousel.Item key={index}>
+      {/*  Display the project image in the carousel item. */}
+      <img
+        className="d-block w-100"
+        src={project.projectImg}
+        alt={project.projectTitle}
+      />
+      <Carousel.Caption className="text-start carousel-caption">
+        {/* Link to the project repository with an image. */}
+        <a
+          href={project.hrefRepository}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={project.gif} alt="Link to repository" className="w-25" />
+        </a>
+        {/* Display the project title and description in the caption. */}
+        <div>
+          <h3>{project.projectTitle}</h3>
+          <p className="truncate">{project.projectDescription}</p>
+        </div>
+      </Carousel.Caption>
+    </Carousel.Item>
+  );
+};
