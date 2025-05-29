@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { PiReadCvLogoBold } from "react-icons/pi";
 import { VscGithub } from "react-icons/vsc";
 import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { BsWhatsapp } from "react-icons/bs";
@@ -17,26 +18,26 @@ function About() {
               </Card.Title>
               <div className="text-start">
                 <Card.Text>
-                  ¡Hola! Soy Julian David Jiménez González,
-                  <br /> desarrollador de software enfocado en el backend. Desde
-                  que tengo memoria, la tecnología siempre me ha llamado la
-                  atención. Me encantaba desmontar cosas solo para ver cómo
-                  funcionaban (y, bueno... a veces no volvían a funcionar, pero
-                  valía la pena el intento).
+                  ¡Hola! Soy Julian David Jiménez González, desarrollador de
+                  software con enfoque en backend y formación como analista de
+                  seguridad. Desde siempre, la tecnología ha sido mi motor: me
+                  fascinaba entender cómo funcionaban las cosas (aunque a veces
+                  no volvieran a funcionar después, pero valía la pena el
+                  intento).
                 </Card.Text>
                 <Card.Text>
-                  Hoy en día, esa curiosidad sigue siendo mi motor. Me apasiona
-                  escribir código, optimizar procesos y darle vida a ideas a
-                  través del software. Me encanta el desafío de encontrar
-                  soluciones prácticas y eficientes, sin complicar más de lo
-                  necesario.
+                  Hoy combino mi pasión por programar con mi experiencia en
+                  ciberseguridad para desarrollar software robusto y seguro. Me
+                  enfoco en aplicar buenas prácticas desde la arquitectura hasta
+                  el código, con especial atención a la protección de datos,
+                  control de acceso y prevención de vulnerabilidades.
                 </Card.Text>
                 <Card.Text>
-                  Soy de los que creen que siempre hay algo nuevo por aprender,
-                  y disfruto explorando herramientas y enfoques diferentes para
-                  mejorar en lo que hago. Siempre trato de hacer las cosas de la
-                  mejor forma para hacer un buen trabajo y seguir creciendo en
-                  este mundo tan cambiante de la tecnología.
+                  Disfruto encontrar soluciones prácticas y bien pensadas,
+                  evitando la complejidad innecesaria, y siempre estoy
+                  explorando nuevas herramientas y enfoques para mejorar lo que
+                  hago. Creo firmemente que el código no solo debe funcionar,
+                  sino también resistir y proteger.
                 </Card.Text>
               </div>
             </Card.Body>
@@ -62,7 +63,20 @@ function About() {
                 <Card.Text>
                   <strong>Teléfono:</strong> +(57) 3103373693
                 </Card.Text>
-                <div>
+                <div className="">
+
+                 <a
+  href="https://drive.google.com/uc?export=download&id=19R2UH8B6vsZ1M1Qt3BGiB0KvcJckY0bs"
+  className="shadow btn btn-secondary border border-light"
+  target="_blank"
+  rel="noopener noreferrer"
+  download
+>
+  Descargar CV <PiReadCvLogoBold />
+</a>
+
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4 gap-3">
                   <a
                     href="https://www.linkedin.com/in/julian-jimenez-g"
                     target="_blank"
