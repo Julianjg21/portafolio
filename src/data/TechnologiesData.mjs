@@ -14,6 +14,24 @@ const technologyIcons = [
     height: 50,
   },
   {
+    name: "Java",
+    src: "https://techstack-generator.vercel.app/java-icon.svg",
+    width: 65,
+    height: 50,
+  },
+  {
+    name: "Spring Boot",
+    src: "https://skillicons.dev/icons?i=spring",
+    width: 65,
+    height: 50,
+  },
+    {
+    name: "Python",
+    src: "https://techstack-generator.vercel.app/python-icon.svg",
+    width: 65,
+    height: 50,
+  },
+  {
     name: "React",
     src: "https://techstack-generator.vercel.app/react-icon.svg",
     width: 48,
@@ -26,10 +44,16 @@ const technologyIcons = [
     height: 48,
   },
   {
-    name: "Python",
-    src: "https://techstack-generator.vercel.app/python-icon.svg",
-    width: 65,
-    height: 50,
+    name: "PostgreSQL",
+    src: "https://skillicons.dev/icons?i=postgres",
+    width: 48,
+    height: 48,
+  },
+  {
+    name: "Prisma ORM",
+    src: "https://skillicons.dev/icons?i=prisma",
+    width: 48,
+    height: 48,
   },
   {
     name: "HTML",
@@ -104,6 +128,12 @@ const toolsIcons = [
   {
     name: "Github",
     src: "https://skillicons.dev/icons?i=github",
+    width: 48,
+    height: 48,
+  },
+  {
+    name: "IntelliJ IDEA",
+    src: "https://img.icons8.com/?size=100&id=F7REdHlg6KJX&format=png&color=000000",
     width: 48,
     height: 48,
   },
