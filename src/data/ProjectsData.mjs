@@ -1,6 +1,10 @@
 import portada_hrms from "../assets/projects_covers/portada-hrms.webp";
 import portada_blue_notebook from "../assets/projects_covers/portada-blue-notebook.webp";
 import portada_xmbot from "../assets/projects_covers/portada-xmbot.webp";
+import more_projects from "../assets/more_projects_covers/more_projects.webp";
+import clickHere from "../assets/more_projects_covers/clickHere.gif";
+import melodex from "../assets/more_projects_covers/melodex.webp";
+import lecturama from "../assets/more_projects_covers/lecturama.webp";
 //Here we can add the projects that we want to show in the portfolio
 //The projectImg is the image that we want to show in the project
 //The projectName is the name of the project
@@ -101,4 +105,30 @@ export const projectsItem = [
     linkGithub: "https://github.com/Julianjg21/xm-report-fetcher-bot",
     linkGithub2: "https://github.com/Julianjg21/xm-report-downloader-bot"
   },
+];
+
+// Here we can add more projects that we want to show in the portfolio quickly in the carousel
+export const moreProyectsData = [
+  {
+    projectImg: lecturama,
+    gif: clickHere,
+    hrefRepository: "https://github.com/Julianjg21/Lecturama",
+    projectTitle: "Lecturama",
+    projectDescription: "A Java-based console application that integrates with the Gutendex API to retrieve and persist bibliographic data into a PostgreSQL database using JPA (Hibernate)...",
+  },
+  {
+    projectImg: melodex,
+    gif: clickHere,
+    hrefRepository: "https://github.com/Julianjg21/melodex-audiodbApi",
+    projectTitle: "Melodex-audiodbApi",
+    projectDescription: "Melodex is a Java application that fetches and manages artist,album, and track data using the TheAudioDB API, storing it locally with Spring Data JPA.",
+  },
+  {
+    projectImg: more_projects,
+    gif: clickHere,
+    hrefRepository: "https://github.com/Julianjg21?tab=repositories",
+    projectTitle: "Melodex-audiodbApi",
+    projectDescription: "Puedes encontrar más proyectos en mi perfil de GitHub, donde encontrarás una variedad de aplicaciones y herramientas que he desarrollado a lo largo del tiempo..",
+  }
+
 ];
