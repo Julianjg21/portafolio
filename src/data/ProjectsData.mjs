@@ -114,20 +114,20 @@ export const moreProyectsData = [
     gif: clickHere,
     hrefRepository: "https://github.com/Julianjg21/Lecturama",
     projectTitle: "Lecturama",
-    projectDescription: "A Java-based console application that integrates with the Gutendex API to retrieve and persist bibliographic data into a PostgreSQL database using JPA (Hibernate)...",
+    projectDescription: "Una aplicación de consola basada en Java que se integra con la API de Gutendex para recuperar y persistir datos bibliográficos en una base de datos PostgreSQL utilizando JPA (Hibernate) ...",
   },
   {
     projectImg: melodex,
     gif: clickHere,
     hrefRepository: "https://github.com/Julianjg21/melodex-audiodbApi",
     projectTitle: "Melodex-audiodbApi",
-    projectDescription: "Melodex is a Java application that fetches and manages artist,album, and track data using the TheAudioDB API, storing it locally with Spring Data JPA.",
+    projectDescription: "Melodex es una aplicación Java que obtiene y administra artistas, álbumes y rastrea los datos utilizando la API TheaudioDB, almacenando localmente  los datos con  Spring JPA.",
   },
   {
     projectImg: more_projects,
     gif: clickHere,
     hrefRepository: "https://github.com/Julianjg21?tab=repositories",
-    projectTitle: "Melodex-audiodbApi",
+    projectTitle:"Más proyectos",
     projectDescription: "Puedes encontrar más proyectos en mi perfil de GitHub, donde encontrarás una variedad de aplicaciones y herramientas que he desarrollado a lo largo del tiempo..",
   }
 
