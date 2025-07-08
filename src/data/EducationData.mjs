@@ -12,7 +12,7 @@ const educationCompleted = [
   {
     period: "2023 - 2024",
     institution: "TÜV NORD",
-    degree: "Curso auditor Interno ISO/IEC27001:2022",
+    degree: "Auditor Interno Certificado ISO/IEC 27001:2022",
   },
   {
     period: "2025",
