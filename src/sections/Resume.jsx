@@ -107,7 +107,7 @@ function About() {
           <Card className=" h-100 border border-primary  bg-light">
             <Card.Body>
               <Card.Title className="text-start mt-4 mb-5">
-                Tecnologias usadas:
+                Tecnologias Utilizadas:
               </Card.Title>
 
               <div class="table-responsive">
@@ -130,7 +130,7 @@ function About() {
                 </table>
               </div>
               <Card.Subtitle className="text-start mt-5 mb-5 w-100">
-                Herramientas usadas:
+                Herramientas Utilizadas:
               </Card.Subtitle>
               <div className="table-responsive">
                 <Table className="table table-light">
