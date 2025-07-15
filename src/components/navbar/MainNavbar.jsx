@@ -28,7 +28,7 @@ function MainNavbar() {
           </Nav>
           <Navbar.Brand className=" mx-auto fs-6 fw-medium" href="#home">
             Julian Jiménez <br />
-            <span className="fs-6 text-dark fw-medium ">
+            <span className="fs-6 text-secondary fw-medium">
               Desarrollador Backend
             </span>
           </Navbar.Brand>
