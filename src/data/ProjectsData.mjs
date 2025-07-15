@@ -46,9 +46,9 @@ export const projectsItem = [
       { technology: "JWT", style: "text-primary border border-primary" },
       { technology: "Bcrypt", style: "text-danger border border-danger" },
     ],
-    linkWebsite: "https://hrms-sml.netlify.app",
-    linkGithub: "https://github.com/Julianjg21/hrms-client",
-    linkGithub2: "https://github.com/Julianjg21/hrms-server",
+   links:[{ link: "https://hrms-sml.netlify.app", name:"DEMO", type:"website" },
+   { link: "https://github.com/Julianjg21/hrms-client", name: "FRONTEND REPO", type:"github" },
+    {link: "https://github.com/Julianjg21/hrms-server", name:"BACKEND REPO", type:"github"}]
   },
   {
     projectImg: portada_blue_notebook,
@@ -75,9 +75,11 @@ export const projectsItem = [
       { technology: "CDBReact", style: "text-info border border-info" },
       { technology: "React-Quill ", style: "text-danger border border-danger" },
     ],
-    linkWebsite: "https://bluenotebook-production.up.railway.app",
-    linkGithub: "https://github.com/Julianjg21/Blue_NoteBook",
-  },
+    links: [
+      { link: "https://bluenotebook-production.up.railway.app", name: "DEMO", type:"website" },
+      { link: "https://github.com/Julianjg21/Blue_NoteBook", name: "FULLSTACK REPO", type:"github" },
+]
+},
   {
     projectImg: portada_xmbot,
     projectName: "👾XM REPORT DOWNLOADER BOT",
@@ -101,9 +103,9 @@ export const projectsItem = [
       { technology: "puppeteer.js", style: "text-primary border border-primary" },
       { technology: "axios", style: "text-info border border-info" },
     ],
-    linkWebsite: "https://t.me/dsProgramadobot",
-    linkGithub: "https://github.com/Julianjg21/xm-report-fetcher-bot",
-    linkGithub2: "https://github.com/Julianjg21/xm-report-downloader-bot"
+   links:[ {link: "https://t.me/dsProgramadobot", name:"DEMO", type:"website"},
+   { link: "https://github.com/Julianjg21/xm-report-fetcher-bot", name: "CODE V1 REPO" , type:"github"},
+    {link: "https://github.com/Julianjg21/xm-report-downloader-bot", name: "CODE V2 REPO", type:"github"}]
   },
 ];
 

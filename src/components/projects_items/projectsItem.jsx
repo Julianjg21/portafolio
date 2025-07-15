@@ -18,12 +18,10 @@ const ProjectItem = ({
   projectName,
   projectDescription,
   technologies,
-  linkWebsite,
-  linkGithub,
-  linkGithub2,
+  links,
 }) => {
   return (
-    <Card className="mt-md-5 mt-3 border-primary bg-light">
+    <Card className="mt-md-5 mt-3 border-primary bg-light shadow">
       <Card.Body>
         <div>
           <div className="row mt-md-5">
@@ -49,40 +47,29 @@ const ProjectItem = ({
                   </p>
                 ))}
               </div>
-              <div className="d-flex justify-content-center mt-4">
-                {linkWebsite && (
-                  <a
-                    href={linkWebsite}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-primary me-2 rounded p-1"
-                    title="Visit the project website"
-                  >
-                    <FaLink size={34} /> {/* Website link icon */}
-                  </a>
-                )}
-                {linkGithub && (
-                  <a
-                    href={linkGithub}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-primary me-2 rounded p-1"
-                    title="Visit the project repository"
-                  >
-                    <RxGithubLogo size={34} /> {/* GitHub link icon */}
-                  </a>
-                )}
-                {linkGithub2 && (
-                  <a
-                    href={linkGithub2}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-primary me-2 rounded p-1"
-                    title="Visit the project repository"
-                  >
-                    <RxGithubLogo size={34} /> {/* GitHub link icon */}
-                  </a>
-                )}
+              <div className="d-flex  align-content-center justify-content-center flex-column  mt-2">
+                <Card.Text className="text-center fw-bold"> Links: </Card.Text>
+                <div className="d-flex justify-content-center  mt-2">
+                  {links &&
+                    links.map((obj, index) => (
+                      <a
+                        key={index}
+                        href={obj.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-light me-2 rounded p-2 d-flex flex-column align-items-center border "
+                        title="Visit the project website"
+                      >
+                        {obj.type === "website" ? (
+                          <FaLink size={28} className="text-primary" />
+                        ) : (
+                          <RxGithubLogo size={28} className="text-danger" />
+                        )}
+
+                        <span>{obj.name}</span>
+                      </a>
+                    ))}
+                </div>
               </div>
             </div>
           </div>
