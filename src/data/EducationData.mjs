@@ -9,6 +9,11 @@ const educationCompleted = [
     institution: "CENTRO INDUSTRIAL  Y DESARROLLO EMPRESARIAL SENA SOACHA",
     degree: "Tecnologo en análisis y desarrollo  de software",
   },
+    {
+        period: "2025",
+        institution: "ORACLE ONE",
+        degree: "Programa ONE Tech Foundation G8 - Back End"
+    },
   {
     period: "2023 - 2024",
     institution: "TÜV NORD",
@@ -23,8 +28,8 @@ const educationCompleted = [
 const educationInProgress = [
   {
     period: "2025",
-    institution: "ORACLE ONE",
-    degree: "Oracle Certified Associate (OCA) - Back-End Development",
+    institution: "Universidad Nacional Abierta y a Distancia - UNAD Colombia",
+    degree: "Ingeniería en  Sistemas",
   },
 ];
 
