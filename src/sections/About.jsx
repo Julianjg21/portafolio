@@ -66,7 +66,7 @@ function About() {
                 <div className="">
 
                  <a
-  href="https://drive.google.com/uc?export=download&id=19R2UH8B6vsZ1M1Qt3BGiB0KvcJckY0bs"
+  href="https://drive.google.com/uc?export=download&id=1khngaCs1L8siRmNyW_nCfSA0mXKPGqy1"
   className="shadow btn btn-secondary border border-light"
   target="_blank"
   rel="noopener noreferrer"
